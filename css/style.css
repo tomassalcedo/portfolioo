@@ -227,31 +227,25 @@ footer {
 
 
 
-/* @keyframes show{
-    from{
-        opacity: 0;
-        scale: 25%;
-    }
-
-    to{
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
 
 
 .container-sections{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+} 
+
+.container-sections h2{
+    margin-left: auto;
+}
+
+.container-detail img{
+    max-width: 80px;
     height: auto;
-    view-timeline-name: --image;
-    view-timeline-axis: block;
+    position: relative;
+    left: 500px;
+   
 
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-} */
-
+}
 
 
