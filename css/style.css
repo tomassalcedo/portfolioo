@@ -7,10 +7,7 @@
     box-sizing: border-box;
 }
 
-/* img{
-    width: 100%;
-    display: flex;
-} */
+
 
 a {
     text-decoration: none;
@@ -119,11 +116,12 @@ header .image img {
 
 
 .project-card {
-    background-color: #fff;
+    background-color: #b9b4b4;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    
 }
 
 
@@ -131,11 +129,13 @@ header .image img {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
+   
 }
 
 
 .project-info {
     padding: 1rem;
+    
 }
 
 .project-info h3 {
@@ -144,7 +144,7 @@ header .image img {
 }
 
 .project-info p {
-    color: #666;
+    color: #000000;
     margin-bottom: 1rem;
 }
 
@@ -184,23 +184,33 @@ header .image img {
 }
 
 
-.titulo-proyectos {
+header h1 {
     text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000; /* Color de texto oscuro */
+
 }
 
 .tecnologias {
     display: flex;
     gap: 10px;
-    /* Agrega espacio entre las imágenes */
     margin-top: 10px;
+    
     /* Ajusta el margen superior según sea necesario */
+    
 }
 
 .tecnologias img {
     width: 50px;
-    /* Ajusta el tamaño de las imágenes según sea necesario */
+    
     height: auto;
     /* Añade cualquier otro estilo necesario para las imágenes */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2); 
+   
 }
 
 .social-img {
@@ -260,10 +270,10 @@ footer {
 }
 
 
-.ver-certificado{
-    margin-top: 20px;
+.btn{
+    margin-top: 30px;
     margin-bottom: 20px;
-    background-color: #1d4ed8;
+    background-color: #3a65db;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -273,26 +283,47 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.ver-certificado:hover{
-    background-color: #2563eb;
+.btn{
+    background-color: #1d4ed8;
 }
 
 
-.progress{
-    margin-bottom: 20px;
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.progress-bar{
-    margin-top: 10px;
-    background-color: #007bff;
-    color: #fff;
+.tecnologia{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    /* margin-right: 150px; */
+    flex-direction: column;
     text-align: center;
-    padding: 4px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: width 0.3s ease;
 }
 
-.progress .progress-bar{
-    width: 0;
+.tecnologia img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
+
+.tecnologia img:hover{
+    transform: scale(2.5);
+}
+
+.tecnologia span{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
