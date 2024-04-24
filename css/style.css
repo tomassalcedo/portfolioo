@@ -235,17 +235,64 @@ footer {
    align-items: center;
 } 
 
-.container-sections h2{
-    margin-left: auto;
+.container-detail h2{
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
-.container-detail img{
+
+.container-detail{
+    text-align: center;
+}
+
+
+.birrete-logo{
     max-width: 80px;
     height: auto;
     position: relative;
-    left: 500px;
-   
-
+    left: auto;
 }
 
 
+.copyright{
+    margin-top: 70px;
+    font-size: 15px;
+}
+
+
+.ver-certificado{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ver-certificado:hover{
+    background-color: #2563eb;
+}
+
+
+.progress{
+    margin-bottom: 20px;
+}
+
+.progress-bar{
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: width 0.3s ease;
+}
+
+.progress .progress-bar{
+    width: 0;
+}
