@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,49 +12,49 @@
     display: flex;
 } */
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #474766;
-    background: linear-gradient(to bottom, #474766,rgb(65, 60, 60));
+    background: linear-gradient(to bottom, #474766, rgb(65, 60, 60));
 }
 
-nav{
+nav {
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;  
+    padding: 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
 }
 
-.nav-logo{
+.nav-logo {
     border: 1px solid black;
-    
-    
-    
-} 
 
 
 
-.nav-links{
+}
+
+
+
+.nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.link a{
+.link a {
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
 }
 
-.link a::after{
+.link a::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -65,30 +65,30 @@ nav{
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
+.link a:hover::after {
     width: 70%;
 }
 
 
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
-    width:auto   
+    width: auto
 }
 
 
-header .content h1 span{
+header .content h1 span {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;    
+    -webkit-text-stroke: 1px #fff;
 }
 
-header .content p{
-    
+header .content p {
+
     color: #ccc;
 }
 
-header .image{
+header .image {
     position: relative;
 }
 
@@ -97,7 +97,7 @@ header .image{
     text-align: center;
 }
 
-header .image::before{
+header .image::before {
     content: "o";
     position: absolute;
     top: 0;
@@ -109,12 +109,12 @@ header .image::before{
     color: #1d4ed8;
     opacity: 0.2;
     z-index: -100;
-}    
+}
 
 
-header .image img{
+header .image img {
     max-width: 600px;
-    
+
 }
 
 
@@ -168,7 +168,7 @@ header .image img{
 
 .images {
     display: flex;
-    overflow-x:hidden;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -184,48 +184,74 @@ header .image img{
 }
 
 
-.titulo-proyectos{
+.titulo-proyectos {
     text-align: center;
 }
 
 .tecnologias {
     display: flex;
-    gap: 10px; /* Agrega espacio entre las imágenes */
-    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    gap: 10px;
+    /* Agrega espacio entre las imágenes */
+    margin-top: 10px;
+    /* Ajusta el margen superior según sea necesario */
 }
 
 .tecnologias img {
-    width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    width: 50px;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
     height: auto;
     /* Añade cualquier otro estilo necesario para las imágenes */
 }
 
 .social-img {
     display: inline-block;
-    max-width: 45px; /* ajusta este valor según sea necesario */
-    height: auto;  
+    max-width: 45px;
+    /* ajusta este valor según sea necesario */
+    height: auto;
     margin-right: 9px;
 }
 
-footer{
+footer {
     background-color: #333;
     color: #fff;
     height: 100px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     width: 100%;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
- 
-    
+    flex-wrap: wrap;
 }
 
-/* .footer p{
-    margin: 0;
-} */
+
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+
+.container-sections{
+    height: auto;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
 
 
 
