@@ -23,7 +23,7 @@ var containerOptions = {
 
 
 var containerSectionsOptions = {
-    duration: 3000,
+    duration: 4000,
     origin: 'bottom',
     distance: '-100px',
     reset: true
