@@ -34,3 +34,9 @@ function abrirCertificado(){
     window.open('./assets/Certificado Desarrollador Web.png', '_blank');
 }
 
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('clicked'); // Agregar o quitar la clase 'clicked' al icono del menú hamburguesa
+    document.querySelector('.nav-dropdown').classList.toggle('active'); // Mostrar u ocultar la lista desplegable al hacer clic en el icono del menú hamburguesa
+});
+
