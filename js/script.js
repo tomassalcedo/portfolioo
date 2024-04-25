@@ -37,6 +37,11 @@ function abrirCertificado(){
 
 document.querySelector('.menu-toggle').addEventListener('click', function() {
     this.classList.toggle('clicked'); // Agregar o quitar la clase 'clicked' al icono del menú hamburguesa
-    document.querySelector('.nav-dropdown').classList.toggle('active'); // Mostrar u ocultar la lista desplegable al hacer clic en el icono del menú hamburguesa
+    document.querySelector('.nav-dropdown').classList.toggle('active'); // Mostrar u ocultar la lista desplegable al hacer clic en el icono del menú hamburguesa 
 });
+
+// document.querySelector('.menu-toggle').addEventListener('click', function() {
+//     this.classList.toggle('clicked'); // Agregar o quitar la clase 'clicked' al icono del menú hamburguesa
+//     document.querySelector('.nav-links').classList.toggle('active'); // Mostrar u ocultar la lista de enlaces de navegación al hacer clic en el icono del menú hamburguesa 
+// });
 

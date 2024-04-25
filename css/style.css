@@ -17,6 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #474766;
     background: linear-gradient(to bottom, #474766, rgb(65, 60, 60));
+    overflow-x: hidden;
 }
 
 nav {
@@ -31,18 +32,18 @@ nav {
 
 .nav-logo {
     /* border: 1px solid black; */
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.nav-logo img{
+.nav-logo img {
     max-width: 80%;
-    max-height: 100%; 
-    object-fit: contain; 
+    max-height: 100%;
+    object-fit: contain;
 }
 
 
@@ -77,10 +78,14 @@ nav {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 50rem;
     margin: auto;
     padding: 5rem 2rem;
     width: auto
+}
+
+.container-sections {
+    padding-top: 2rem;
 }
 
 
@@ -130,6 +135,8 @@ header .image img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    max-width: 55rem;
+    max-height: 55rem;
 
 }
 
@@ -176,16 +183,23 @@ header .image img {
 }
 
 .images {
-    display: flex;
+    /* display: flex;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Crear columnas automáticas con un ancho mínimo de 200px */
+    gap: 10px;
+    /* Espacio entre las imágenes */
+
+
 }
 
 .images img {
-    width: 400px;
+
     height: auto;
-    margin-right: 10px;
     transition: transform 0.3s ease;
+    height: auto;
 }
 
 .images img:hover {
@@ -214,7 +228,7 @@ header h1 {
 }
 
 .tecnologias img {
-    width: 3.125;
+    width: 3.125rem;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -348,7 +362,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  
+    body {
+        overflow-x: hidden;
+    }
 
     .nav-links {
         display: none;
@@ -408,7 +424,9 @@ footer {
     }
 
 
-    .contacto, .social-links, .copyright {
+    .contacto,
+    .social-links,
+    .copyright {
         margin-bottom: 1rem;
     }
 
@@ -419,4 +437,37 @@ footer {
     .social-img {
         margin-right: 0.5rem;
     }
+
+
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        margin-bottom: 2rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-info p {
+        font-size: 1rem;
+    }
+
+    .tecnologias img {
+        width: 2rem;
+        height: auto;
+    }
+
+
+   .project-card .buttons{
+    gap: 2rem;
+   }
+
+
 }
