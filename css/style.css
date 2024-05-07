@@ -79,7 +79,8 @@ nav {
 .container {
     max-width: 50rem;
     margin: auto;
-    padding: 5rem 2rem;
+    
+    margin-top: 3rem;
     width: auto
 }
 
@@ -269,7 +270,9 @@ footer {
 
 .copyright {
     margin-top: 4.375rem;
-    font-size: 0.938rem;
+    font-size: 1rem;
+    margin-right: 2rem;
+    
 }
 
 
